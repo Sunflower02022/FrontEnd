@@ -1,9 +1,105 @@
-#img-bg{
-    background-image: url('https://www.kigpapeldeparede.com.br/wp-content/uploads/2017/07/13227-30-1.jpg');
-
-    min-height: 695px;
-
-    background-position: center;
-    background-repeat: no-repeat;
+.banner-sec {
+    background: url(https://i.imgur.com/T3r4ATU.jpg) no-repeat left bottom;
     background-size: cover;
+    min-height: 500px;
+    border-radius: 0 10px 10px 0;
+    padding: 0;
+}
+
+.container {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 15px 20px 0px rgba(0, 0, 0, 0.1);
+
+}
+
+.login-sec {
+    padding: 50px 30px;
+    position: relative;
+}
+
+.login-sec .copy-text {
+    position: absolute;
+    width: 80%;
+    bottom: 20px;
+    font-size: 13px;
+    text-align: center;
+}
+
+.login-sec .copy-text i {
+    color: #1fb840;
+}
+
+.login-sec .copy-text a {
+    color: #E36262;
+}
+
+.login-sec h2 {
+    margin-bottom: 30px;
+    font-weight: 800;
+    font-size: 30px;
+    color: #003566;
+}
+
+.login-sec h2:after {
+    content: " ";
+    width: 100px;
+    height: 5px;
+    background: #FFD60A;
+    display: block;
+    margin-top: 20px;
+    border-radius: 3px;
+    margin-left: auto;
+    margin-right: auto
+}
+
+.btn-login {
+    background: #003566;
+    color: #fff;
+    font-weight: 600;
+}
+
+.banner-text {
+    width: 70%;
+    position: absolute;
+    bottom: 40px;
+    padding-left: 20px;
+}
+
+.banner-text h2 {
+    color: #fff;
+    font-weight: 600;
+}
+
+.banner-text h2:after {
+    content: " ";
+    width: 100px;
+    height: 5px;
+    background: #FFF;
+    display: block;
+    margin-top: 20px;
+    border-radius: 3px;
+}
+
+.banner-text p {
+    color: #fff;
+}
+
+hr{
+    border-color: #FFD60A;
+}
+
+.btn-login:hover{
+    background: #FFD60A;
+    color: #003566;
+}
+
+.container-fluid{
+    background-image: linear-gradient(to right, #FCA311, #FFC300 , #E5E5E5);
+    height: 100vh;
+    padding: .5rem 1rem;
+    border-radius: .2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
 }

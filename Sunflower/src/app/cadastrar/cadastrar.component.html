@@ -1,56 +1,47 @@
-<div class="container-fluid">
-    <div class="row ">
-        <div class="col-md-6" id="img-bg"></div>
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
 
-        <div class="col-md-6 mt-5 mb-5">
-            <div class="row d-flex justify-content-center">
-                <div class="col-md-10">
-                    <h1 class="text-center">Cadastro</h1>
 
+<div class="container-fluid p-0">
+    <div class="container align-items-center">
+        <div class="row d-flex justify-content-center">
+            <div class="col-md-4 login-sec">
+                <h2 class="text-center">Cadastrar</h2>
+    
+                <form class="login-form">
                     <div class="form-group">
-                        <label for="nome">Nome</label>
-                        <input class="form-control" type="text" name="nome" id="nome" placeholder="Seu nome">
+                        <label for="exampleInputEmail1">Nome</label>
+                        <input type="text" class="form-control" placeholder="Nome">
+    
                     </div>
 
                     <div class="form-group">
-                        <label for="usuário">Usuário</label>
-                        <input class="form-control" type="text" name="usuário" id="usuário" placeholder="Seu usuário">
+                        <label for="exampleInputPassword1">Usuário</label>
+                        <input type="text" class="form-control" placeholder="Usuário">
                     </div>
 
                     <div class="form-group">
-                        <label for="foto">Link da Foto</label>
-                        <input class="form-control" type="text" name="foto" id="foto" placeholder="Link da sua foto">
+                        <label for="exampleInputPassword1">Senha</label>
+                        <input type="password" class="form-control" placeholder="Senha">
                     </div>
 
                     <div class="form-group">
-                        <label for="Senha">Senha</label>
-                        <input class="form-control" type="password" name="Senha" id="Senha" placeholder="Sua Senha">
+                        <label for="exampleInputPassword1">Confirmar Senha</label>
+                        <input type="password" class="form-control" placeholder="Confirmar Senha">
                     </div>
-
-                    <div class="form-group">
-                        <label for="ConfirmSenha">Confirmar Senha</label>
-                        <input class="form-control" type="password" name="ConfirmSenha" id="ConfirmSenha"
-                            placeholder=" Confirme sua Senha">
-                    </div>
-
-                    <div class="form-group">
-                        <label for="tipo">Tipo de Usuário</label>
-                        <select class="form-control" name="tipo" id="tipo">
-                            <option>Selecione um tipo de Usuário</option>
-                            <option value="normal">Normal</option>
-                            <option value="adm">Administrador</option>
-                        </select>
-                    </div>
-
+                   
                     <div class="d-flex justify-content-center">
-                        <button type="submit" class="btn btn-danger mr-4" routerLink='/entrar' > Cancelar </button>
-                        <button type="submit" class="btn btn-success">Cadastrar</button>
+                        <button type="submit" class="btn mr-4" id="cancelar" routerLink="/entrar">Cancelar</button>
+                        <button type="submit" class="btn" id="cadastrar">Cadastrar</button>
                     </div>
 
-                </div>
+     
+                </form>
+    
             </div>
-
+    
+            <div class="col-md-8 banner-sec"></div>
         </div>
     </div>
 </div>
-
