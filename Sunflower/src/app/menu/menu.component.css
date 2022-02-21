@@ -1,0 +1,30 @@
+.fs-16{
+    font-size: 16pt;
+}
+
+a{
+    cursor: pointer;
+}
+
+.menu-sunflower{
+
+    background-color: #F7F9E3
+
+}
+
+.menu{
+    color: #14213D;
+    
+}
+
+.menu li a:hover {
+
+    color: #6f96eb;
+
+
+}
+
+.menu:hover{
+
+    color: #6f96eb;
+}
