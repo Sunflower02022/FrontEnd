@@ -15,14 +15,25 @@ ul.social-network li{
     padding: 10px;
 }
 
-.fa-instagram:hover{
-    color: #b6299e;
-}
 
-.fa-github:hover{
+.fa-github{
     color: #000000;
 }
 
-.fa-linkedin-square:hover{
+.fa-linkedin-square{
     color: #0a66c2;
+}
+
+.color-rodape{
+
+    background-color: #E5E5E5;
+}
+
+.azul-padrao{
+    color: #14213d;
+
+}
+
+.rodape-azul{
+    background-color: #14213d;
 }
