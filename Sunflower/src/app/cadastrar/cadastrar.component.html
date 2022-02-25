@@ -1,46 +1,41 @@
-<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
-
-
 <div class="container-fluid p-0">
     <div class="container align-items-center">
         <div class="row d-flex justify-content-center">
             <div class="col-md-4 login-sec">
                 <h2 class="text-center">Cadastrar</h2>
-    
+
                 <form class="login-form">
                     <div class="form-group">
                         <label for="exampleInputEmail1">Nome</label>
-                        <input type="text" class="form-control" placeholder="Nome">
-    
+                        <input [(ngModel)]="usuario.nomeCompleto" type="text" class="form-control" placeholder="Nome" name="nomeCompleto">
+
                     </div>
 
                     <div class="form-group">
-                        <label for="exampleInputPassword1">Usuário</label>
-                        <input type="text" class="form-control" placeholder="Usuário">
+                        <label for="exampleInputPassword1">E-mail</label>
+                        <input [(ngModel)]="usuario.email" type="text" class="form-control" placeholder="Usuário" name="email">
                     </div>
 
                     <div class="form-group">
                         <label for="exampleInputPassword1">Senha</label>
-                        <input type="password" class="form-control" placeholder="Senha">
+                        <input (input)="confirmSenha($event)" type="password" class="form-control" placeholder="Senha" name="senha">
                     </div>
 
                     <div class="form-group">
                         <label for="exampleInputPassword1">Confirmar Senha</label>
-                        <input type="password" class="form-control" placeholder="Confirmar Senha">
-                    </div>
-                   
-                    <div class="d-flex justify-content-center">
-                        <button type="submit" class="btn mr-4" id="cancelar" routerLink="/entrar">Cancelar</button>
-                        <button type="submit" class="btn" id="cadastrar">Cadastrar</button>
+                        <input [(ngModel)]="usuario.senha" name="confirmarSenha" type="password" class="form-control" placeholder="Confirmar Senha">
                     </div>
 
-     
+                    <div class="d-flex justify-content-center">
+                        <button type="submit" class="btn mr-4" id="cancelar" routerLink="/entrar">Cancelar</button>
+                        <button type="submit" class="btn" id="cadastrar" (click)="cadastrar()" >Cadastrar</button>
+                    </div>
+
+
                 </form>
-    
+
             </div>
-    
+
             <div class="col-md-8 banner-sec"></div>
         </div>
     </div>

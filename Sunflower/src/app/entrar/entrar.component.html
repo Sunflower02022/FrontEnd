@@ -8,30 +8,30 @@
         <div class="row d-flex justify-content-center">
             <div class="col-md-4 login-sec">
                 <h2 class="text-center">Entrar</h2>
-    
+
                 <form class="login-form">
                     <div class="form-group">
-                        <label for="exampleInputEmail1">Usuário</label>
-                        <input type="text" class="form-control" placeholder="Usuário">
-    
+                        <label for="exampleInputEmail1">E-mail</label>
+                        <input [(ngModel)]="usuarioLogin.email" type="text" class="form-control" placeholder="E-mail" name="email">
+
                     </div>
                     <div class="form-group">
                         <label for="exampleInputPassword1">Senha</label>
-                        <input type="password" class="form-control" placeholder="Senha">
+                        <input [(ngModel)]="usuarioLogin.senha" type="password" class="form-control" placeholder="Senha" name="senha">
                     </div>
-    
+
                     <div class="form-check d-flex justify-content-center">
-                        <button type="submit" class="btn btn-login float-right ">Enviar</button>
+                        <button type="submit" class="btn btn-login float-right " (click)="entrar()" >Entrar</button>
                     </div>
-    
+
                     <hr class="mt-5 mb-5">
-    
+
                     <p class="text-center">Não tem uma conta? <a routerLink="/cadastrar">Cadastre-se</a></p>
-    
+
                 </form>
-    
+
             </div>
-    
+
             <div class="col-md-8 banner-sec"></div>
         </div>
     </div>
