@@ -16,6 +16,7 @@ import { InicioComponent } from './inicio/inicio.component';
 import { ProdutoComponent } from './produto/produto.component';
 import { CategoriaComponent } from './categoria/categoria.component';
 import { PainelComponent } from './painel/painel.component';
+import { CadastroProdutoComponent } from './cadastro-produto/cadastro-produto.component';
 
 
 
@@ -30,7 +31,8 @@ import { PainelComponent } from './painel/painel.component';
     InicioComponent,
     ProdutoComponent,
     CategoriaComponent,
-    PainelComponent
+    PainelComponent,
+    CadastroProdutoComponent
   ],
   imports: [
     BrowserModule,
