@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { environment } from 'src/environments/environment.prod';
 import { Produto } from '../model/Produto';
 import { AuthService } from '../service/auth.service';
 import { ProdutoService } from '../service/produto.service';
@@ -21,13 +22,25 @@ export class ProdutoComponent implements OnInit {
   ) { }
 
   ngOnInit() {
+
     this.getAllProdutos()
+
   }
 
   getAllProdutos() {
     this.produtoService.getAllProduto().subscribe((resp: Produto[]) => {
       this.listaProdutos = resp
     })
+  }
+
+  cadastrarProduto() {
+    this.produtoService.postProduto(this.produto).subscribe((resp: Produto) => {
+      this.produto = resp
+      alert('Produto cadastrado com sucesso!')
+      this.getAllProdutos()
+      this.produto = new Produto()
+    })
+
   }
 
 }
