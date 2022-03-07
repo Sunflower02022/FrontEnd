@@ -18,7 +18,7 @@
             <div class="container mt-5">
                 <div class="row d-flex justify-content-center g-1" *ngFor='let item of listaProdutos'>
                     <div class="col-md-4">
-                        <div class="product text-center"> <img src="https://i.imgur.com/dzyiJS2.jpg" width="250">
+                        <div class="product text-center"> <img src="{{item.foto}}" width="250">
                             <div class="about text-left px-3">
                                 <h4>{{item.nome}} </h4> <span class="text-muted">{{item.descricao}}</span>
                                 <h3>{{item.preco}}</h3>

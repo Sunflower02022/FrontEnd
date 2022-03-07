@@ -4,5 +4,6 @@ export class UsuarioLogin{
 	public nomeCompleto: string;
 	public email: string;
 	public senha: string;
+	public tipo: string;
 	public token: string;
 }

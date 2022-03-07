@@ -8,4 +8,5 @@ import {Usuario} from "./Usuario"
 	public descricao: string;
 	public categoria: Categoria[];
 	public usuario: Usuario;
+	public foto: string;
 }

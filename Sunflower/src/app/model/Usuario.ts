@@ -5,5 +5,6 @@ export class Usuario{
 	public nomeCompleto: string;
 	public email: string;
 	public senha: string;
+	public tipo: string;
 	public produto: Produto[];
 }
