@@ -13,6 +13,7 @@ import { SobreComponent } from './sobre/sobre.component';
 import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { InicioComponent } from './inicio/inicio.component';
+import { ProdutoComponent } from './produto/produto.component';
 
 
 
@@ -24,7 +25,8 @@ import { InicioComponent } from './inicio/inicio.component';
     EntrarComponent,
     CadastrarComponent,
     SobreComponent,
-    InicioComponent
+    InicioComponent,
+    ProdutoComponent
   ],
   imports: [
     BrowserModule,

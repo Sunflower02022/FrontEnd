@@ -1,0 +1,60 @@
+<div class="container-fluid p-0">
+    <img id="imagem-produto" src="https://i.imgur.com/T3r4ATU.jpg " alt="">
+</div>
+
+<div class="container-fluid pt-4">
+
+    <nav>
+        <div class="nav nav-tabs d-flex justify-content-center " id="nav-tab" role="tablist">
+          <a class="nav-item nav-link active text-secondary" id="nav-todosProdutos" data-toggle="tab" href="#todosProdutos" role="tab" aria-controls="nav-todosProdutos" aria-selected="true">Todos os produtos</a>
+          <a class="nav-item nav-link text-secondary" id="nav-residencial" data-toggle="tab" href="#residencial" role="tab" aria-controls="nav-residencial" aria-selected="false">Residencial</a>
+          <a class="nav-item nav-link text-secondary" id="nav-industrial" data-toggle="tab" href="#industrial" role="tab" aria-controls="nav-industrial" aria-selected="false">Industrial</a>
+        </div>
+      </nav>
+
+      <div class="tab-content" id="nav-tabContent">
+        <div class="tab-pane fade show active" id="todosProdutos" role="tabpanel" aria-labelledby="nav-todosProdutos-tab">
+            
+            <div class="container mt-5">
+                <div class="row d-flex justify-content-center g-1" *ngFor='let item of listaProdutos'>
+                    <div class="col-md-4">
+                        <div class="product text-center"> <img src="https://i.imgur.com/dzyiJS2.jpg" width="250">
+                            <div class="about text-left px-3">
+                                <h4>{{item.nome}} </h4> <span class="text-muted">{{item.descricao}}</span>
+                                <h3>{{item.preco}}</h3>
+                            </div> <span class="dot"><span class="inner-dot"><i class="fa fa-plus"></i></span></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="tab-pane fade" id="residencial" role="tabpanel" aria-labelledby="nav-residencial-tab">
+            <div class="tab-pane fade show active" id="todosProdutos" role="tabpanel" aria-labelledby="nav-todosProdutos-tab">
+            
+                <div class="container mt-5">
+                    <div class="row d-flex justify-content-center g-1">
+                        <div class="col-md-4">
+                            <div class="product text-center"> <img src="https://i.imgur.com/dzyiJS2.jpg" width="250">
+                                <div class="about text-left px-3">
+                                    <h4>Standron Chair</h4> <span class="text-muted">Home decor</span>
+                                    <h3>$230</h3>
+                                </div> <span class="dot"><span class="inner-dot"><i class="fa fa-plus"></i></span></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+            </div>
+            
+
+        </div>
+
+
+        <div class="tab-pane fade" id="industrial" role="tabpanel" aria-labelledby="nav-industrial-tab">
+
+        </div>
+      </div>
+</div>

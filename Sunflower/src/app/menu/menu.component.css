@@ -1,61 +1,87 @@
+#nav-inicio{
+    background-color: #feffdc;
+}
+
+.fs-64{
+    font-size: 64pt;
+    color: #001D3D;
+    text-shadow: 2px 2px #feffdc;
+}
+
+.fs-24{
+    font-size: 24pt;
+}
+
 .fs-16{
     font-size: 16pt;
+    color: #001D3D;
 }
 
-a{
-    cursor: pointer;
+.fc-blue{
+    color: #001D3D;
 }
 
-.menu-sunflower{
-
-    background-color: #F7F9E3
-
+.fc-yellow{
+    color: #FFD60A;
 }
 
-.menu{
-    color: #14213D;
-    
+.form-control{
+    background-color: #FFD60A;
+    min-width: 400px;
+    min-height: 1px;
 }
 
-.menu li a:hover {
-
-    color: #6f96eb;
-
-
+.top-centered{
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
-.menu:hover{
-
-    color: #6f96eb;
+.centered{
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #feffdc;
+    font-size: 16pt;
+    text-shadow: 1px 1px #001D3D;
 }
 
-.pesquisar:hover{
+.row{
+    background-color: #001D3D;
+}
 
-    color: #6f96eb;
-   
+#home{
+    color: #001D3D;
+}
+
+#produtos{
+    color: #001D3D;
+}
+
+#equipe{
+    color: #001D3D;
+}
+
+#sobre{
+    color: #001D3D;
 }
 
 #divBusca{
-    background-color: #ffd60a;
-    border-radius: 60px;
-    width: 300px;
-    height: 33px;
+    border-radius: 20px;
+}
 
+#frete{
+    background-color: #001D3D;
 }
-#txtBusca{
-    float: left;
-    background-color: transparent;
-    padding-left:30px;
-    font-size: 15px;
-    font-family: 'Rubik';
-    border: none;
-    height: 30px;
-    width: 260px;
+
+#img{
+    position: relative;
+    text-align: center;
 }
-.button1{
-    background-color: transparent;
-    border: transparent;
-}
-.distancia{
-    margin-left: -20px;
+
+#img-top{
+    width: 100%;
+    height: 550px;
 }
