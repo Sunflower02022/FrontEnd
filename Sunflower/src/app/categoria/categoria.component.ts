@@ -13,6 +13,7 @@ export class CategoriaComponent implements OnInit {
 
   listaCategorias: Categoria[]
   categoria: Categoria = new Categoria()
+  idCategoria: number
 
   constructor(
     private router: Router,
