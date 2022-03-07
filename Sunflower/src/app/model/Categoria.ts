@@ -6,5 +6,5 @@ export class Categoria{
 	public nomeCategoria: string;
 	public descricaoCategoria: string;
 	public setor: Setor; // poder ser só enum
-	public produto: Produto;
+	public produto: Produto[];
 }

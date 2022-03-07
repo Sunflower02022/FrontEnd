@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { Categoria } from '../model/Categoria';
 import { AuthService } from '../service/auth.service';
 import { CategoriaService } from '../service/categoria.service';
 
@@ -11,7 +12,7 @@ import { CategoriaService } from '../service/categoria.service';
 export class CategoriaComponent implements OnInit {
 
   listaCategorias: Categoria[]
-  produto: Categoria = new Categoria()
+  categoria: Categoria = new Categoria()
 
   constructor(
     private router: Router,
@@ -27,6 +28,16 @@ export class CategoriaComponent implements OnInit {
     this.categoriaService.getAllCategoria().subscribe((resp: Categoria[]) => {
       this.listaCategorias = resp
     })
+  }
+
+  cadastrarCategoria() {
+    this.categoriaService.postCategoria(this.categoria).subscribe((resp: Categoria) => {
+      this.categoria = resp
+      alert('Categoria cadastrada com sucesso!')
+      this.getAllCategoria()
+      this.categoria = new Categoria()
+    })
+
   }
 
 }
