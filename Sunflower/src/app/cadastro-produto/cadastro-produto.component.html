@@ -24,6 +24,13 @@
                     </div>
 
                     <div class="form-group">
+                        <label for="texto">Escolha uma Categoria</label>
+                        <select class="form-control" name="categoria" id="categoria" [(ngModel)]="idCategoria" (change)="findAllCategoria()">
+                            <option  *ngFor="let item of listaCategoria" value="{{item.id}}">{{item.descricaoCategoria}}</option>
+                        </select>
+                      </div>
+
+                    <div class="form-group">
                         <label for="texto">Foto</label>
                         <input [(ngModel)]='produto.foto' type="text" class="form-control" id="foto"
                             placeholder="Digite a descrição da categoria">

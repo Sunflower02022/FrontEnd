@@ -31,12 +31,18 @@ export class CategoriaEditComponent implements OnInit {
     }
 
     let id = this.route.snapshot.params['id']
-    this.findByIdTema(id)
+    this.findByIdCategoria(id)
   }
 
-  findByIdTema(id: number){
+  findByIdCategoria(id: number){
     this.categoriaService.getByIdCategoria(id).subscribe((resp: Categoria)=>{
       this.categoria = resp
+    })
+  }
+
+  findAllCategoria(){
+    this.categoriaService.getAllCategoria().subscribe((resp: Categoria[]) => {
+      this.listaCategoria = resp
     })
   }
 
