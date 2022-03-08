@@ -19,25 +19,27 @@ export class CadastroProdutoComponent implements OnInit {
     private cadastroProdutoService: ProdutoService,
   ) { }
 
-  ngOnInit(){
+  ngOnInit() {
 
-    // if(environment.token == ''){
-    //   this.router.navigate(['/entrar'])
+    if (environment.token == '') {
+      this.router.navigate(['/entrar'])
     }
 
-    findAllProduto(){
-      this.cadastroProdutoService.getAllProduto().subscribe((resp: Produto[]) =>{
-        this.listaProduto = resp
-      })
-    }
-  
-    cadastrar(){
-      this.cadastroProdutoService.postProduto(this.produto).subscribe((resp: Produto) =>{
-        this.produto = resp
-        alert('Produto cadastrado com sucesso!')
-        this.findAllProduto()
-        this.produto = new Produto
-      })
-    }
+    this.findAllProduto()
+  }
 
+  findAllProduto() {
+    this.cadastroProdutoService.getAllProduto().subscribe((resp: Produto[]) => {
+      this.listaProduto = resp
+    })
+  }
+
+  cadastrar() {
+    this.cadastroProdutoService.postProduto(this.produto).subscribe((resp: Produto) => {
+      this.produto = resp
+      alert('Produto cadastrado com sucesso!')
+      this.findAllProduto()
+      this.produto = new Produto
+    })
+  }
 }

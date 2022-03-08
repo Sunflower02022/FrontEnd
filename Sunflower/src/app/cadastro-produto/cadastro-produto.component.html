@@ -36,3 +36,44 @@
         </div>
     </div>
 </div>
+
+<div class="container">
+
+    <div class="row mt-5">
+        <div class="col-md-12">
+            <h2 class="text-center">Todas as categorias</h2>
+        </div>
+    </div>
+
+    <div class="row mt-3 mb-5 d-flex justify-content-center">
+        <div class="col-md-6">
+
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Nome</th>
+                        <th scope="col" class="text-right">Descrição</th>
+                        <th scope="col" class="text-right">Controles</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr *ngFor='let item of listaProduto'>
+                        <th>{{item.id}}</th>
+                        <td>{{item.nome}}</td>
+                        <td>{{item.descricao}}</td>
+                        <td>{{item.preco}}</td>
+                        <td class="d-flex justify-content-end">
+                            <!-- <button class="btn btn-info mr-3" [routerLink]="['/tema-edit', item.id]">Editar</button> -->
+                            <button class="btn btn-danger" [routerLink]="['/produto-delete', item.id]">Apagar</button>
+                        </td>
+
+                    </tr>
+
+                </tbody>
+            </table>
+
+        </div>
+    </div>
+</div>
