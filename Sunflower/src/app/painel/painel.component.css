@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 .fc-bg-yellow {
     background-color: #ffd60a;
 }
@@ -14,28 +13,37 @@
 .blue {
     color: #001D3D;
 }
-=======
+
 .quadrado-az{
     background-color: #001D3D;
     width: 380px;
     height: 500px;
+}
 
+.fs-24{
+    font-size: 24px;
+}
 
+.fa{
+    font-size: 70px;
+}
+
+.preto{
+    color: black;
 }
 
 .quadrado-am{
     background-color: #FFD60A;
     width: 380px;
     height: 500px;
-
-
 }
+
 .teste1{
     position: absolute;
     top: 60px;
     left: 250px;
-
 }
+
 .margin{
     margin-top: 90px;
 }

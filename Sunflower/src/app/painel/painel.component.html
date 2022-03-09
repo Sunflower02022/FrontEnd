@@ -1,44 +1,22 @@
-<div class="container-fluid">
-    <div class="row d-flex justify-content-center">
-        <button routerLink="/cadastro-produto">
-            Cadastro Produto
-        </button>
-        <button routerLink="/categoria">
-            Cadastro Categoria
-        </button>
-    </div>
-</div>
-
-
-
-
-<div class="container ">
-	<div class="row d-flex justify-content-center mt-5">
-
-
-
-	</div>
-  </div>
-
-  <div class="container">
+<div class="container mt-5">
 	<div class="row">
-		<div class="col-md-4">
+		<div class="col-md-4 d-flex align-items-center">
 			<div class="quadrado-am">
 				<div class="text-center margin">
-				<p class="f-30 text-white">Cadastre</p>
-				<p class="f-30 text-white mb-4">uma nova categoria</p>
-				<img src="https://i.imgur.com/QbR47x5.png" width= "100px" height="100px" alt="">
-				<i class="fa-thin fa-box-taped"></i>
-			  </div>
-			  <div class=" mt-5 text-center">
-				<button class=" botton-a fonte text-white f-15 bold">Cadastrar</button>
-			  </div>
-			  </div>
+					<p class="fs-24 preto m-0">Cadastre</p>
+					<p class="fs-24 preto mb-4">uma nova categoria:</p>
+					<img src="https://i.imgur.com/QbR47x5.png" width="100px" height="100px" alt="">
+					<i class="fa-thin fa-box-taped"></i>
+				</div>
+				<div class=" mt-5 text-center">
+					<button class=" botton-a fonte text-white f-15 font-weight-bold" routerLink="/categoria">Cadastrar</button>
+				</div>
+			</div>
 		</div>
 		<div class="col-md-8">
 			<div class="container">
 
-				<div class="row mt-5">
+				<div class="row">
 					<div class="col-md-12">
 						<h2 class="text-center">Todas as Categorias</h2>
 					</div>
@@ -51,20 +29,22 @@
 							<thead>
 								<tr>
 									<th scope="col">#</th>
-									<th scope="col">Nome</th>
-									<th scope="col" class="text-right">Descrição</th>
-									<th scope="col" class="text-right">Controles</th>
+									<th scope="col" class="text-center">Nome</th>
+									<th scope="col" class="text-center">Descrição</th>
+									<th scope="col" class="text-center">Controles</th>
 								</tr>
 							</thead>
 
 							<tbody>
 								<tr *ngFor='let item of listaCategorias'>
 									<th>{{item.id}}</th>
-									<td>{{item.nomeCategoria}}</td>
-									<td>{{item.descricaoCategoria}}</td>
+									<td class="text-center">{{item.nomeCategoria}}</td>
+									<td class="text-center">{{item.descricaoCategoria}}</td>
 									<td class="d-flex justify-content-end">
-										<button class="btn btn-info mr-3" [routerLink]="['/produto-edit', item.id]">Editar</button>
-										<button class="btn btn-danger" [routerLink]="['/produto-delete', item.id]">Apagar</button>
+										<button class="btn fc-bg-blue text-white font-weight-bold mr-3"
+											[routerLink]="['/categoria-edit', item.id]">Editar</button>
+										<button class="btn fc-bg-yellow blue font-weight-bold"
+											[routerLink]="['/categoria-delete', item.id]">Apagar</button>
 									</td>
 
 								</tr>
@@ -83,18 +63,17 @@
 
 <div class="container">
 	<div class="row">
-		<div class="col-md-4">
-			<div class="quadrado-az mr-5">
+		<div class="col-md-4 d-flex align-items-center">
+			<div class="quadrado-az">
 				<div class="text-center margin">
-				<p class="f-30 text-white">Cadastre</p>
-				<p class="f-30 text-white">um novo produto</p>
-				<img src="https://i.imgur.com/SSg2tts.png" width="100px" height="100px" alt="">
+					<p class="fs-24 text-white m-0">Cadastre</p>
+					<p class="fs-24 text-white mb-4">um novo produto:</p>
+					<i class="fa fa-list-check text-white"></i>
 
-			  </div>
-			  <div class=" mt-5 text-center">
-				<button class=" botton-y fonte text-dark f-15 bold">Cadastrar</button>
-			  </div>
-
+				</div>
+				<div class=" mt-5 text-center">
+					<button class=" botton-y fonte f-15 font-weight-bold blue" routerLink="/cadastro-produto">Cadastrar</button>
+				</div>
 			</div>
 		</div>
 		<div class="col-md-8">
@@ -113,21 +92,24 @@
 							<thead>
 								<tr>
 									<th scope="col">#</th>
-									<th scope="col">Nome</th>
-									<th scope="col" class="text-right">Descrição</th>
-									<th scope="col" class="text-right">Preço</th>
+									<th scope="col" class="text-center">Nome</th>
+									<th scope="col" class="text-center">Descrição</th>
+									<th scope="col" class="text-center">Preço</th>
+									<th scope="col" class="text-center">Controles</th>
 								</tr>
 							</thead>
 
 							<tbody>
 								<tr *ngFor='let item of listaProduto'>
 									<th>{{item.id}}</th>
-									<td>{{item.nome}}</td>
-									<td>{{item.descricao}}</td>
-									<td>{{item.preco}}</td>
+									<td class="text-center">{{item.nome}}</td>
+									<td class="text-center">{{item.descricao}}</td>
+									<td class="text-center">R${{item.preco}}</td>
 									<td class="d-flex justify-content-end">
-										<button class="btn btn-info mr-3" [routerLink]="['/produto-edit', item.id]">Editar</button>
-										<button class="btn btn-danger" [routerLink]="['/produto-delete', item.id]">Apagar</button>
+										<button class="btn fc-bg-blue text-white font-weight-bold mr-3"
+											[routerLink]="['/produto-edit', item.id]">Editar</button>
+										<button class="btn fc-bg-yellow blue font-weight-bold"
+											[routerLink]="['/produto-delete', item.id]">Apagar</button>
 									</td>
 
 								</tr>
