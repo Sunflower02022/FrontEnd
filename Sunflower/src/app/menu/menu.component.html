@@ -1,47 +1,47 @@
 <div class="container-fluid" id="nav-inicio">
-  <nav class="navbar navbar-expand-lg navbar-light menu-sunflower">
-      <div class="container-fluid">
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-              data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-              aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-          </button>
+    <nav class="navbar navbar-expand-lg navbar-light menu-sunflower">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-          <div class="collapse navbar-collapse menu" id="navbarSupportedContent">
-              <ul class="navbar-nav mr-auto d-flex align-items-center menu">
-                  <li class="nav-item pl-3 fs-24">
-                      <p class="m-0 mr-5 font-weight-bold menu fc-blue">Sunflower</p>
-                  </li>
-                  <li class="nav-item mt-2 mr-4">
-                      <a class="nav-link active font-weight-bold" id="home" aria-current="page" href="#">Home</a>
-                  </li>
-                  <li class="nav-item mt-2">
-                      <a class="nav-link active" id="produtos" aria-current="page" href="#">Produtos</a>
-                  </li>
-                  <li class="nav-item mt-2">
-                      <a class="nav-link active" id="equipe" aria-current="page" href="#">Equipe</a>
-                  </li>
-                  <li class="nav-item mt-2">
-                      <a class="nav-link active" id="sobre" aria-current="page" href="#">Sobre nós</a>
-                  </li>
-              </ul>
+            <div class="collapse navbar-collapse menu" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto d-flex align-items-center menu">
+                    <li class="nav-item fs-24">
+                        <p class="m-0 mr-5 font-weight-bold menu fc-blue">Sunflower</p>
+                    </li>
+                    <li class="nav-item mt-2">
+                        <a class="nav-link active negrito" id="home" aria-current="page" routerLink="/inicio">Home</a>
+                    </li>
+                    <li class="nav-item mt-2">
+                        <a class="nav-link active negrito" id="produtos" aria-current="page" routerLink="/produto">Produtos</a>
+                    </li>
+                    <li class="nav-item mt-2">
+                        <a class="nav-link active negrito" id="sobre" aria-current="page" routerLink="/sobre">Sobre nós</a>
+                    </li>
+                    <li class="nav-item mt-2">
+                        <a class="nav-link active negrito" id="equipe" aria-current="page" routerLink="/equipe">Equipe</a>
+                    </li>
+                </ul>
 
-              <ul class="navbar-nav d-flex align-items-center">
-                  <form class="form-inline my-2 my-lg-0">
-                      <input class="form-control mr-2" type="search" id="divBusca" aria-label="Search"
-                          placeholder="Pesquisar"/>
-                      <a class="fs-16" href=""><i class="fa-solid fa-magnifying-glass"></i></a>
-                  </form>
-              </ul>
+                <ul class="navbar-nav d-flex align-items-center">
+                    <form class="form-inline my-2 my-lg-0">
+                        <input class="form-control mr-2" type="search" id="divBusca" aria-label="Search"
+                            placeholder="Pesquisar" />
+                        <a class="fs-16" href=""><i class="fa-solid fa-magnifying-glass"></i></a>
+                    </form>
+                </ul>
 
-              <ul class="navbar-nav ml-auto d-flex align-items-center">
-                  <li class="nav-item">
-                      <a class="fs-16 mr-4" href=""><i class="fa-regular fa-user"></i></a>
-                      <a class="fs-16 mr-4" href=""><i class="fa fa-cart-shopping"></i></a>
-                      <a class="fs-16 mr-5" href="" routerLink="/painel"><i class="fa fa-gear"></i></a>
-                  </li>
-              </ul>
-          </div>
-      </div>
-  </nav>
+                <ul class="navbar-nav ml-auto d-flex align-items-center">
+                    <li class="nav-item">
+                        <a class="fs-16 mr-4" routerLink="/entrar"><i class="fa-regular fa-user"></i></a>
+                        <a class="fs-16 mr-4"><i class="fa fa-cart-shopping"></i></a>
+                        <a class="fs-16 mr-5" routerLink="/painel"><i class="fa fa-gear"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 </div>

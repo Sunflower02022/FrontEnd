@@ -1,11 +1,5 @@
 body {
-    background-color: #eee
-}
-
-.product {
-    padding: 10px;
-    background-color: #fff;
-    position: relative
+    background-color: rgb(196, 203, 224)
 }
 
 .about h4 {
@@ -16,12 +10,28 @@ body {
     color: #e3ce57
 }
 
+.fc-bg-yellow{
+    background-color:#ffd60a;
+}
+
 .fc-yellow{
-    color:#ffd60a ;
+    color:#ffd60a;
 }
 
 .fc-bg-blue{
-    background-color:#001d3d;
+    color:#001d3d;
+}
+
+.background{
+    background-color: #d1d1d1;
+}
+
+.fs-24{
+    font-size: 24px;
+}
+
+.fs-18{
+    font-size: 18px;
 }
 
 .about span {
@@ -57,6 +67,19 @@ body {
     cursor: pointer
 }
 
-#todosProdutos{
-    justify-content: space-around; 
+.alinhamento{
+    justify-content: space-evenly;
+}
+
+.card-text{
+    text-transform: capitalize;
+}
+
+.btn{
+    text-align: center;
+}
+
+.btn:hover{
+    background-color:#001d3d;
+    color:#ffd60a;
 }

@@ -1,7 +1,7 @@
 .fs-64{
     font-size: 64pt;
-    color: #001D3D;
-    text-shadow: 2px 2px #feffdc;
+    color: #FFD60A;
+    text-shadow: 4px 4px #001D3D;
 }
 
 .fs-24{
@@ -23,7 +23,7 @@
 
 .top-centered{
     position: absolute;
-    top: 30%;
+    top: 35%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
@@ -35,12 +35,12 @@ input:focus {
 
 .centered{
     position: absolute;
-    top: 45%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: #feffdc;
-    font-size: 16pt;
-    text-shadow: 1px 1px #001D3D;
+    font-size: 24px;
+    text-shadow: 2px 2px #001D3D;
 }
 
 .fc-bg-blue{
