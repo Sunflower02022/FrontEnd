@@ -2,7 +2,7 @@
 
     <div class="row">
         <div class="col-md-12">
-            <h1 class="text-center text-secondary">Atualizar categoria</h1>
+            <h1 class="text-center preto">Atualizar categoria</h1>
         </div>
     </div>
 
@@ -18,22 +18,10 @@
                 <label for="descricaoCategoria">Descrição</label>
                 <textarea [(ngModel)]="categoria.descricaoCategoria" class="form-control" name="descricaoCategoria" id="descricaoCategoria" rows="3"></textarea>
               </div>
-          
-              <!-- <div class="form-group">
-                <label for="categoria">Categoria</label>
-                <input [(ngModel)]="produto.categoria" type="text" class="form-control" id="titulo" placeholder="Escolha a categoria">
-              </div> -->
-    
-              <div class="form-group">
-                <label for="texto">Escolha uma Categoria</label>
-                <select class="form-control" name="categoria" id="categoria" [(ngModel)]="idCategoria" (change)="findAllCategoria()">
-                    <option  *ngFor="let item of listaCategoria" value="{{item.id}}">{{item.descricaoCategoria}}</option>
-                </select>
-              </div>
 
               <div class="d-flex justify-content-center">
-                <button class="btn btn-vermelho test-white mr-4" routerLink="/inicio">Cancelar</button>
-                <button class="btn btn-roxo2 test-white" (click)="atualizar()">Atualizar</button>
+                <button class="btn fc-bg-yellow blue font-weight-bold mr-4" routerLink="/inicio">Cancelar</button>
+                <button class="btn fc-bg-blue yellow font-weight-bold" (click)="atualizar()">Atualizar</button>
               </div>
 
         </div>

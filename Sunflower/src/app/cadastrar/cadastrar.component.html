@@ -7,28 +7,34 @@
                 <form class="login-form">
                     <div class="form-group">
                         <label for="exampleInputEmail1">Nome</label>
-                        <input [(ngModel)]="usuario.nomeCompleto" type="text" class="form-control" placeholder="Nome" name="nomeCompleto">
+                        <input [(ngModel)]="usuario.nomeCompleto" type="text" class="form-control" placeholder="Nome"
+                            name="nomeCompleto">
 
                     </div>
 
                     <div class="form-group">
                         <label for="exampleInputPassword1">E-mail</label>
-                        <input [(ngModel)]="usuario.email" type="text" class="form-control" placeholder="Usuário" name="email">
+                        <input [(ngModel)]="usuario.email" type="text" class="form-control" placeholder="Usuário"
+                            name="email">
                     </div>
 
                     <div class="form-group">
                         <label for="exampleInputPassword1">Senha</label>
-                        <input (input)="confirmSenha($event)" type="password" class="form-control" placeholder="Senha" name="senha">
+                        <input (input)="confirmSenha($event)" type="password" class="form-control" placeholder="Senha"
+                            name="senha">
                     </div>
 
                     <div class="form-group">
                         <label for="exampleInputPassword1">Confirmar Senha</label>
-                        <input [(ngModel)]="usuario.senha" name="confirmarSenha" type="password" class="form-control" placeholder="Confirmar Senha">
+                        <input [(ngModel)]="usuario.senha" name="confirmarSenha" type="password" class="form-control"
+                            placeholder="Confirmar Senha">
                     </div>
 
-                    <div class="d-flex justify-content-center">
-                        <button type="submit" class="btn mr-4" id="cancelar" routerLink="/entrar">Cancelar</button>
-                        <button type="submit" class="btn" id="cadastrar" (click)="cadastrar()" >Cadastrar</button>
+                    <div class="d-flex justify-content-center pt-4">
+                        <button type="submit" class="btn fc-bg-blue yellow font-weight-bold mr-4" id="cadastrar"
+                            (click)="cadastrar()">Cadastrar</button>
+                        <button type="submit" class="btn fc-bg-yellow font-weight-bold" id="cancelar"
+                            routerLink="/entrar">Cancelar</button>
                     </div>
 
 

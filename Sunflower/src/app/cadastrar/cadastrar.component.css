@@ -106,11 +106,18 @@ hr{
     justify-content: center;
 }
 
-#cancelar{
-    background-color: rgb(255, 70, 70);
-    
+.fc-bg-yellow {
+    background-color: #ffd60a;
 }
 
-#cadastrar{
-    background-color: rgba(19, 155, 19, 0.897);
+.fc-bg-blue{
+    background-color: #001D3D;
+}
+
+.yellow {
+    color: #ffd60a;
+}
+
+.blue {
+    color: #001D3D;
 }

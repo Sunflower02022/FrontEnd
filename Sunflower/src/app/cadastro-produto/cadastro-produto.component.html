@@ -1,31 +1,36 @@
 <div class="container-fluid">
-
-    <div class="row bg-secondary">
+    <div class="row">
         <div class="col-md-12 text-white">
 
-            <h1 class="fs-54 text-center mt-2">Produtos</h1>
-            <h5 class="fs-18 text-center">Veja aqui todos os produtos cadastrados ou cadastre um novo:</h5>
+            <h1 class="fs-54 text-center mt-5 text-color mb-3">Produtos</h1>
+            <h5 class="fs-18 text-center text-color">Veja aqui todos os produtos cadastrados ou cadastre um novo:</h5>
 
-            <div class="row d-flex justify-content-center mt-4 ">
+            <div class="row d-flex justify-content-center mt-4">
                 <div class="col-md-3">
-                    <div class="form-group">
+                    <div class="form-group text-color">
                         <label for="texto">Nome</label>
                         <input [(ngModel)]='produto.nome' type="text" class="form-control" id="nome"
                             placeholder="Digite o nome da categoria">
                     </div>
 
-                    <div class="form-group">
+                    <div class="form-group text-color">
                         <label for="texto">Preço</label>
                         <input [(ngModel)]='produto.preco' type="text" class="form-control" id="preco"
                             placeholder="Digite a descrição da categoria">
                     </div>
-                    <div class="form-group">
+                    <div class="form-group text-color">
                         <label for="texto">Descrição</label>
                         <input [(ngModel)]='produto.descricao' type="text" class="form-control" id="descricao"
                             placeholder="Digite o nome da categoria">
                     </div>
 
-                    <div class="form-group">
+                    <div class="form-group text-color">
+                        <label for="texto">Foto</label>
+                        <input [(ngModel)]='produto.foto' type="text" class="form-control" id="foto"
+                            placeholder="Digite a descrição da categoria">
+                    </div>
+
+                    <div class="form-group text-color">
                         <label for="texto">Escolha uma Categoria</label>
                         <select class="form-control" name="categoria" id="categoria" [(ngModel)]="idCategoria"
                             (change)="findByIdCategoria()">
@@ -34,58 +39,12 @@
                         </select>
                     </div>
 
-                    <div class="form-group">
-                        <label for="texto">Foto</label>
-                        <input [(ngModel)]='produto.foto' type="text" class="form-control" id="foto"
-                            placeholder="Digite a descrição da categoria">
-                    </div>
-
                     <div class="d-flex justify-content-center mb-3 mt-2">
-                        <button class="btn btn-light" (click)='cadastrar()'>Cadastrar</button>
+                        <button class="btn fc-bg-yellow font-weight-bold fc-blue mt-3"
+                            (click)='cadastrar()'>Cadastrar</button>
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
-</div>
-
-<div class="container">
-
-    <div class="row mt-5">
-        <div class="col-md-12">
-            <h2 class="text-center">Todos os produtos</h2>
-        </div>
-    </div>
-
-    <div class="row mt-3 mb-5 d-flex justify-content-center">
-        <div class="col-md-6">
-
-            <table class="table table-hover">
-                <thead>
-                    <tr>
-                        <th scope="col">#</th>
-                        <th scope="col">Nome</th>
-                        <th scope="col" class="text-right">Descrição</th>
-                        <th scope="col" class="text-right">Preço</th>
-                    </tr>
-                </thead>
-
-                <tbody>
-                    <tr *ngFor='let item of listaProduto'>
-                        <th>{{item.id}}</th>
-                        <td>{{item.nome}}</td>
-                        <td>{{item.descricao}}</td>
-                        <td>{{item.preco}}</td>
-                        <td class="d-flex justify-content-end">
-                            <button class="btn btn-info mr-3" [routerLink]="['/produto-edit', item.id]">Editar</button>
-                            <button class="btn btn-danger" [routerLink]="['/produto-delete', item.id]">Apagar</button>
-                        </td>
-
-                    </tr>
-
-                </tbody>
-            </table>
-
         </div>
     </div>
 </div>

@@ -1,0 +1,16 @@
+.text-color{
+    color: black;
+}
+
+.fc-bg-yellow {
+    background-color: #ffd60a;
+}
+
+.blue {
+    color: #001D3D;
+}
+
+.btn:hover{
+    background-color: #001D3D;
+    color: #ffd60a;
+}
