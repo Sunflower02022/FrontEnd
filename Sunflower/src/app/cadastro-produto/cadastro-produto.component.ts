@@ -33,11 +33,18 @@ export class CadastroProdutoComponent implements OnInit {
     }
 
     this.findAllProduto()
+    this.findAllCategoria()
   }
 
   findAllCategoria(){
     this.categoriaService.getAllCategoria().subscribe((resp: Categoria[]) => {
       this.listaCategoria = resp
+    })
+  }
+
+  findByIdCategoria(){
+    this.categoriaService.getByIdCategoria(this.idCategoria).subscribe((resp: Categoria)=>{
+     this.categoria = resp
     })
   }
 

@@ -6,9 +6,13 @@
                     <div class="card-body text-center">
                         <h3 class="fc-yellow">45% OFF</h3>
                         <a>
-                            <img class="card-img-top" src="https://images.pexels.com/photos/2078268/pexels-photo-2078268.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="">
+                            <img class="card-img-top"
+                                src="https://images.pexels.com/photos/2078268/pexels-photo-2078268.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+                                alt="">
                         </a>
-                        <a class="text-reset" ><h3 class="card-title display-4">x</h3></a>
+                        <a class="text-reset">
+                            <h3 class="card-title display-4">x</h3>
+                        </a>
                         <h6>$199.99 <del class="text-muted ml-2">$399.99</del></h6>
                         <button class="btn fc-bg-blue my-2 fc-yellow">Esse botão</button>
                     </div>
@@ -19,9 +23,13 @@
                     <div class="card-body text-center">
                         <h3 class="fc-yellow">50% OFF</h3>
                         <a>
-                            <img class="card-img-top" src="https://images.pexels.com/photos/1374128/pexels-photo-1374128.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="">
+                            <img class="card-img-top"
+                                src="https://images.pexels.com/photos/1374128/pexels-photo-1374128.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+                                alt="">
                         </a>
-                        <a class="text-reset" ><h3 class="card-title display-4">y</h3></a>
+                        <a class="text-reset">
+                            <h3 class="card-title display-4">y</h3>
+                        </a>
                         <h6>$199.99 <del class="text-muted ml-2">$399.99</del></h6>
                         <button class="btn fc-bg-blue my-2 fc-yellow">Esse botão</button>
                     </div>
@@ -32,9 +40,13 @@
                     <div class="card-body text-center">
                         <h3 class="fc-yellow">60% OFF</h3>
                         <a>
-                            <img class="card-img-top" src="https://images.pexels.com/photos/2783873/pexels-photo-2783873.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="">
+                            <img class="card-img-top"
+                                src="https://images.pexels.com/photos/2783873/pexels-photo-2783873.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+                                alt="">
                         </a>
-                        <a class="text-reset"><h3 class="card-title display-4">z</h3></a>
+                        <a class="text-reset">
+                            <h3 class="card-title display-4">z</h3>
+                        </a>
                         <h6>$199.99 <del class="text-muted ml-2">$399.99</del></h6>
                         <button class="btn fc-bg-blue my-2 fc-yellow">Esse botão</button>
                     </div>
@@ -48,14 +60,19 @@
 
     <nav>
         <div class="nav nav-tabs d-flex justify-content-center " id="nav-tab" role="tablist">
-          <a class="nav-item nav-link active text-secondary" id="nav-todosProdutos" data-toggle="tab" href="#todosProdutos" role="tab" aria-controls="nav-todosProdutos" aria-selected="true">Todos os produtos</a>
-          <a class="nav-item nav-link text-secondary" id="nav-residencial" data-toggle="tab" href="#residencial" role="tab" aria-controls="nav-residencial" aria-selected="false">Residencial</a>
-          <a class="nav-item nav-link text-secondary" id="nav-industrial" data-toggle="tab" href="#industrial" role="tab" aria-controls="nav-industrial" aria-selected="false">Industrial</a>
+            <a class="nav-item nav-link active text-secondary" id="nav-todosProdutos" data-toggle="tab"
+                href="#todosProdutos" role="tab" aria-controls="nav-todosProdutos" aria-selected="true">Todos os
+                produtos</a>
+            <a class="nav-item nav-link text-secondary" id="nav-residencial" data-toggle="tab" href="#residencial"
+                role="tab" aria-controls="nav-residencial" aria-selected="false">Residencial</a>
+            <a class="nav-item nav-link text-secondary" id="nav-industrial" data-toggle="tab" href="#industrial"
+                role="tab" aria-controls="nav-industrial" aria-selected="false">Industrial</a>
         </div>
-      </nav>
+    </nav>
 
-      <div class="tab-content" id="nav-tabContent">
-        <div class="tab-pane fade show active" id="todosProdutos" role="tabpanel" aria-labelledby="nav-todosProdutos-tab"> 
+    <div class="tab-content" id="nav-tabContent">
+        <div class="tab-pane fade show active" id="todosProdutos" role="tabpanel"
+            aria-labelledby="nav-todosProdutos-tab">
             <div class="container mt-5">
                 <div class="" *ngFor='let item of listaProdutos'>
                     <div class="col-md-4">
@@ -72,13 +89,14 @@
 
 
         <div class="tab-pane fade" id="residencial" role="tabpanel" aria-labelledby="nav-residencial-tab">
-            <div class="tab-pane fade show active" id="todosProdutos" role="tabpanel" aria-labelledby="nav-todosProdutos-tab">
-            
+            <div class="tab-pane fade show active" id="todosProdutos" role="tabpanel"
+                aria-labelledby="nav-todosProdutos-tab">
+
             </div>
         </div>
 
         <div class="tab-pane fade" id="industrial" role="tabpanel" aria-labelledby="nav-industrial-tab">
 
         </div>
-      </div>
+    </div>
 </div>

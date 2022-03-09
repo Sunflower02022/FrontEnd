@@ -28,7 +28,7 @@
                     <div class="form-group">
                         <label for="texto">Escolha uma Categoria</label>
                         <select class="form-control" name="categoria" id="categoria" [(ngModel)]="idCategoria"
-                            (change)="findAllCategoria()">
+                            (change)="findByIdCategoria()">
                             <option *ngFor="let item of listaCategoria" value="{{item.id}}">{{item.descricaoCategoria}}
                             </option>
                         </select>

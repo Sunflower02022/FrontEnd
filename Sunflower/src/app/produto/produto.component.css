@@ -1,8 +1,3 @@
-#imagem-produto{
-    width: 100%;
-    height: 500px;
-}
-
 body {
     background-color: #eee
 }
@@ -60,4 +55,8 @@ body {
     align-items: center;
     position: absolute;
     cursor: pointer
+}
+
+#todosProdutos{
+    justify-content: space-around; 
 }
