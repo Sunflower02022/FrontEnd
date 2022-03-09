@@ -1,5 +1,47 @@
-<div class="container-fluid p-0">
-    <img id="imagem-produto" src="https://i.imgur.com/T3r4ATU.jpg " alt="">
+<div class="container-fluid">
+    <div class="container mb-4">
+        <div class="row">
+            <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4 mt-4">
+                <div class="card shadow">
+                    <div class="card-body text-center">
+                        <h3 class="fc-yellow">45% OFF</h3>
+                        <a>
+                            <img class="card-img-top" src="https://images.pexels.com/photos/2078268/pexels-photo-2078268.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="">
+                        </a>
+                        <a class="text-reset" ><h3 class="card-title display-4">x</h3></a>
+                        <h6>$199.99 <del class="text-muted ml-2">$399.99</del></h6>
+                        <button class="btn fc-bg-blue my-2 fc-yellow">Esse botão</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4 mt-4">
+                <div class="card shadow">
+                    <div class="card-body text-center">
+                        <h3 class="fc-yellow">50% OFF</h3>
+                        <a>
+                            <img class="card-img-top" src="https://images.pexels.com/photos/1374128/pexels-photo-1374128.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="">
+                        </a>
+                        <a class="text-reset" ><h3 class="card-title display-4">y</h3></a>
+                        <h6>$199.99 <del class="text-muted ml-2">$399.99</del></h6>
+                        <button class="btn fc-bg-blue my-2 fc-yellow">Esse botão</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4 mt-4">
+                <div class="card shadow">
+                    <div class="card-body text-center">
+                        <h3 class="fc-yellow">60% OFF</h3>
+                        <a>
+                            <img class="card-img-top" src="https://images.pexels.com/photos/2783873/pexels-photo-2783873.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="">
+                        </a>
+                        <a class="text-reset"><h3 class="card-title display-4">z</h3></a>
+                        <h6>$199.99 <del class="text-muted ml-2">$399.99</del></h6>
+                        <button class="btn fc-bg-blue my-2 fc-yellow">Esse botão</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 
 <div class="container-fluid pt-4">
@@ -13,45 +55,27 @@
       </nav>
 
       <div class="tab-content" id="nav-tabContent">
-        <div class="tab-pane fade show active" id="todosProdutos" role="tabpanel" aria-labelledby="nav-todosProdutos-tab">
-            
+        <div class="tab-pane fade show active" id="todosProdutos" role="tabpanel" aria-labelledby="nav-todosProdutos-tab"> 
             <div class="container mt-5">
-                <div class="row d-flex justify-content-center g-1" *ngFor='let item of listaProdutos'>
+                <div class="" *ngFor='let item of listaProdutos'>
                     <div class="col-md-4">
                         <div class="product text-center"> <img src="{{item.foto}}" width="250">
-                            <div class="about text-left px-3">
+                            <div class="about text-left px-3 ">
                                 <h4>{{item.nome}} </h4> <span class="text-muted">{{item.descricao}}</span>
-                                <h3>{{item.preco}}</h3>
+                                <h3>R$ {{item.preco}}</h3>
                             </div> <span class="dot"><span class="inner-dot"><i class="fa fa-plus"></i></span></span>
                         </div>
                     </div>
                 </div>
             </div>
-
         </div>
 
 
         <div class="tab-pane fade" id="residencial" role="tabpanel" aria-labelledby="nav-residencial-tab">
             <div class="tab-pane fade show active" id="todosProdutos" role="tabpanel" aria-labelledby="nav-todosProdutos-tab">
             
-                <div class="container mt-5">
-                    <div class="row d-flex justify-content-center g-1">
-                        <div class="col-md-4">
-                            <div class="product text-center"> <img src="https://i.imgur.com/dzyiJS2.jpg" width="250">
-                                <div class="about text-left px-3">
-                                    <h4>Standron Chair</h4> <span class="text-muted">Home decor</span>
-                                    <h3>$230</h3>
-                                </div> <span class="dot"><span class="inner-dot"><i class="fa fa-plus"></i></span></span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-    
             </div>
-            
-
         </div>
-
 
         <div class="tab-pane fade" id="industrial" role="tabpanel" aria-labelledby="nav-industrial-tab">
 

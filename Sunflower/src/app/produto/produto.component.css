@@ -21,6 +21,14 @@ body {
     color: #e3ce57
 }
 
+.fc-yellow{
+    color:#ffd60a ;
+}
+
+.fc-bg-blue{
+    background-color:#001d3d;
+}
+
 .about span {
     font-size: 13px
 }

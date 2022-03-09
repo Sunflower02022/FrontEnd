@@ -1,61 +1,70 @@
-.fs-16{
-    font-size: 16pt;
+.medidas{
+    display: flex;
+    height: 520px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    align-items: center;
+    justify-content: center;
 }
 
-a{
-    cursor: pointer;
-}
-
-.menu-sunflower{
-
-    background-color: #F7F9E3
-
-}
-
-.menu{
-    color: #14213D;
-    
-}
-
-.menu li a:hover {
-
-    color: #6f96eb;
-
-
-}
-
-.menu:hover{
-
-    color: #6f96eb;
-}
-
-.pesquisar:hover{
-
-    color: #6f96eb;
-   
-}
-
-#divBusca{
-    background-color: #ffd60a;
-    border-radius: 60px;
-    width: 300px;
-    height: 33px;
-
-}
-#txtBusca{
-    float: left;
-    background-color: transparent;
-    padding-left:30px;
-    font-size: 15px;
-    font-family: 'Rubik';
-    border: none;
-    height: 30px;
+.quadrado{
+    height: 250px;
     width: 260px;
+    background-color: #001d3d;
+    position: absolute;
+    margin-top: 10px;
 }
-.button1{
-    background-color: transparent;
-    border: transparent;
+
+.quadrado2{
+    height: 270px;
+    width: 260px;
+    background-color: #ffd60a;
+    position: absolute;
+    margin-top: 70px;
+    margin-left: 70px;
+    opacity: 95%;
 }
-.distancia{
-    margin-left: -20px;
+
+.fc-blue{
+    color: #001d3d;
+}
+
+.fc-bg-yellow{
+    background-color: #ffd60a;
+}
+
+.fc-bg-blue{
+    background-color: #001d3d;
+}
+
+.foto{
+    border-radius: 120px;
+    width: 200px;
+    height: 330px;
+    position: absolute;
+    top: 160px;
+    left: 80px;
+}
+
+.btn{
+    border-radius: 20px;
+}
+
+.quadrado3{
+    height: 270px;
+    width: 270px;
+    background-color: #ffd60a;
+    margin-top: 40px;
+    margin-bottom: 70px;
+    padding: 10px;
+    font-size: 18px;
+}
+
+.posicao{
+    justify-content: space-evenly;
+}
+
+.fa{
+    color: #DDDDDD;
+    font-size: 45px;
 }

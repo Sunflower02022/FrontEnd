@@ -8,6 +8,7 @@ import { ProdutoDeleteComponent } from './delete/produto-delete/produto-delete.c
 import { CategoriaEditComponent } from './edit/categoria-edit/categoria-edit.component';
 import { ProdutoEditComponent } from './edit/produto-edit/produto-edit.component';
 import { EntrarComponent } from './entrar/entrar.component';
+import { EquipeComponent } from './equipe/equipe.component';
 import { InicioComponent } from './inicio/inicio.component';
 import { PainelComponent } from './painel/painel.component';
 import { ProdutoComponent } from './produto/produto.component';
@@ -27,7 +28,9 @@ const routes: Routes = [
   {path: 'categoria-delete/:id', component: CategoriaDeleteComponent},
   {path: 'categoria-edit/:id', component: CategoriaEditComponent},
   {path: 'produto-delete/:id', component: ProdutoDeleteComponent},
-  {path: 'produto-edit/:id', component: ProdutoEditComponent}
+  {path: 'produto-edit/:id', component: ProdutoEditComponent},
+  {path: 'equipe', component: EquipeComponent}
+
 
 ];
 

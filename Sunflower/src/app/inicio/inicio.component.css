@@ -60,6 +60,16 @@ input:focus {
     width: 100%;
 }
 
+.divAlinhamento{
+    display: table;
+    text-align: center;
+}
+
+.pAlinhamento{
+    display: table-cell;
+    vertical-align: middle;
+}
+
 #frete{
     background-color: #001D3D;
 }
