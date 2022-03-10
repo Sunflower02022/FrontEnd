@@ -145,6 +145,10 @@ li {
 .blue {
     color: #001D3D;
 }
+.black{
+    color: #000000;
+}
+
 
 .fc-bg {
     background-color: #001d3def;
@@ -152,4 +156,38 @@ li {
 
 .fs-64 {
     font-size: 64px;
+}
+
+.border{
+    border-radius: 50%;
+}
+
+.quadrado{
+    height: 400px;
+    width: 280px;
+    background-color: #ffd60a;
+    position: relative;
+}
+
+.quadrado-a{
+    height: 400px;
+    width: 280px;
+    background-color: #001D3D;
+    opacity: 95%;
+    position: relative;
+}
+.fs-25{
+    font-size: 25px;
+}
+
+.gradiente{
+    background-image: linear-gradient(to right, #FCA311, #FFC300 , #E5E5E5);
+}
+
+.marg-t{
+margin-top: 100px;
+}
+
+.p-120{
+    padding: 120px;
 }

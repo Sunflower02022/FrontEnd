@@ -30,6 +30,8 @@ const routes: Routes = [
   {path: 'produto-delete/:id', component: ProdutoDeleteComponent},
   {path: 'produto-edit/:id', component: ProdutoEditComponent},
   {path: 'equipe', component: EquipeComponent}
+  
+ 
 
 
 ];
