@@ -1,0 +1,23 @@
+.fc-bg-yellow {
+    background-color: #ffd60a;
+}
+
+.fc-bg-blue{
+    background-color: #001D3D;
+}
+
+.yellow {
+    color: #ffd60a;
+}
+
+.blue {
+    color: #001D3D;
+}
+
+.preto{
+    color: black;
+}
+
+.flu{
+    text-transform: capitalize;
+}

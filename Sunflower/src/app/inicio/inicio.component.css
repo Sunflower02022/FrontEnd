@@ -1,27 +1,27 @@
-.fs-64{
+.fs-64 {
     font-size: 64pt;
     color: #FFD60A;
     text-shadow: 4px 4px #001D3D;
 }
 
-.fs-24{
+.fs-24 {
     font-size: 24pt;
 }
 
-.fs-16{
+.fs-16 {
     font-size: 16pt;
     color: #001D3D;
 }
 
-.fc-blue{
+.fc-blue {
     color: #001D3D;
 }
 
-.fc-yellow{
+.fc-yellow {
     color: #FFD60A;
 }
 
-.top-centered{
+.top-centered {
     position: absolute;
     top: 35%;
     left: 50%;
@@ -33,7 +33,7 @@ input:focus {
     outline: 0;
 }
 
-.centered{
+.centered {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -43,44 +43,48 @@ input:focus {
     text-shadow: 2px 2px #001D3D;
 }
 
-.fc-bg-blue{
+.fc-bg-blue {
     background-color: #001D3D;
 }
 
-.fc-bg-yellow{
+.fc-bg-yellow {
     background-color: #FFD60A;
 }
 
-.transparencia{
+.transparencia {
     background-color: transparent;
     border: transparent;
 }
 
-.w100{
+.w100 {
     width: 100%;
 }
 
-.divAlinhamento{
+.divAlinhamento {
     display: table;
     text-align: center;
 }
 
-.pAlinhamento{
+.pAlinhamento {
     display: table-cell;
     vertical-align: middle;
 }
 
-#frete{
+#frete {
     background-color: #001D3D;
 }
 
-#img{
+#img {
     position: relative;
     text-align: center;
 }
 
-#img-top{
+#img-top {
     width: 100%;
     height: 550px;
 }
 
+.justify {
+    display: flex;
+    align-items: center;
+}
