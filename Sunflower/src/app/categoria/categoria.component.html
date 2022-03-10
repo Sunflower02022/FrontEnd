@@ -16,13 +16,23 @@
                         <input [(ngModel)]='categoria.descricaoCategoria' type="text" class="form-control"
                             id="descricao" placeholder="Digite a descrição da categoria">
                     </div>
-                    <div class="form-group text-color">
+                    <!-- <div class="form-group text-color">
                         <label for="texto">Escolha um Setor</label>
                         <select class="form-control" [(ngModel)]='idCategoria' name="categoria" id="categoria">
                             <option disabled selected value>Selecione uma opção</option>
-                            <option>RESIDENCIAL</option>
-                            <option>INDUSTRIAL</option>
+                            <option value="1">RESIDENCIAL</option>
+                            <option value="2">INDUSTRIAL</option>
                         </select>
+                    </div> -->
+
+                    <div class="form-group">
+                        <label for="setor">Setor</label>
+                        <select class="form-control" name="setor" id="setor" (change)="tipoSetor($event)">
+                            <option value="">Selecione o Setor:</option>
+                            <option value="INDUSTRIAL" >INDUSTRIAL</option>
+                            <option value="RESIDENCIAL" >RESIDENCIAL</option>
+                        </select>
+
                     </div>
 
                     <div class="d-flex justify-content-center">

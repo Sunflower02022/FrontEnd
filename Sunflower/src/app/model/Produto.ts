@@ -12,4 +12,5 @@ import {Usuario} from "./Usuario"
 	public categoria: Categoria;
 	public usuario: Usuario;
 	public foto: string;
+	
 }

@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { environment } from 'src/environments/environment.prod';
+import { Categoria } from '../model/Categoria';
 import { Produto } from '../model/Produto';
 import { AuthService } from '../service/auth.service';
 import { CarrinhoService } from '../service/carrinho.service';
@@ -12,6 +13,11 @@ import { ProdutoService } from '../service/produto.service';
   styleUrls: ['./produto.component.css']
 })
 export class ProdutoComponent implements OnInit {
+
+  listaResidencial: Produto[]
+  listaIndustrial: Produto[]
+  
+  categoria = new Categoria()
 
   listaProdutos: Produto[]
   produto: Produto = new Produto()
@@ -26,13 +32,33 @@ export class ProdutoComponent implements OnInit {
 
   ngOnInit() {
 
+    
     this.getAllProdutos()
 
+    this.separarProdutoIndustrial()
+
   }
+
+  separarProdutoIndustrial(){
+    for (let i = 1 ;i < this.listaProdutos.length; i ++){
+      if(this.listaProdutos[i].categoria.setor == "INDUSTRIAL"){
+        this.listaIndustrial.push(this.listaProdutos[i])
+        console.log(this.listaProdutos[i])
+      }
+
+    }
+    console.log("ok")
+    console.log(this.listaIndustrial)
+  }
+
+
+  
 
   getAllProdutos() {
     this.produtoService.getAllProduto().subscribe((resp: Produto[]) => {
       this.listaProdutos = resp
+      console.log("ok2")
+      console.log(this.listaIndustrial)
     })
   }
 
