@@ -42,6 +42,7 @@ export class CategoriaComponent implements OnInit {
       alert('Categoria cadastrada com sucesso!')
       this.getAllCategoria()
       this.categoria = new Categoria()
+      this.router.navigate(['/painel'])
     })
 
   }

@@ -6,7 +6,7 @@ import {Usuario} from "./Usuario"
 	public nome: string;
 	public preco: number;
 	public descricao: string;
-	public categoria: Categoria[];
+	public categoria: Categoria;
 	public usuario: Usuario;
 	public foto: string;
 }

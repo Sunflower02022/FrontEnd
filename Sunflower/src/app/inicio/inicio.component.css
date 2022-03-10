@@ -4,12 +4,17 @@
     text-shadow: 4px 4px #001D3D;
 }
 
-.fs-24 {
-    font-size: 24pt;
+.fs-20 {
+    font-size: 20px;
+}
+
+.fs-18{
+    font-size: 18px;
+    color: #001D3D;
 }
 
 .fs-16 {
-    font-size: 16pt;
+    font-size: 16px;
     color: #001D3D;
 }
 
