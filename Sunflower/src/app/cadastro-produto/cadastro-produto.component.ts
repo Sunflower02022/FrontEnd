@@ -63,6 +63,7 @@ export class CadastroProdutoComponent implements OnInit {
       alert('Produto cadastrado com sucesso!')
       this.findAllProduto()
       this.produto = new Produto
+      this.router.navigate(['/painel'])
     })
   }
 }

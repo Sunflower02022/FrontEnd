@@ -3,6 +3,7 @@ import { Router } from '@angular/router';
 import { environment } from 'src/environments/environment.prod';
 import { Produto } from '../model/Produto';
 import { AuthService } from '../service/auth.service';
+import { CarrinhoService } from '../service/carrinho.service';
 import { ProdutoService } from '../service/produto.service';
 
 @Component({
@@ -14,11 +15,13 @@ export class ProdutoComponent implements OnInit {
 
   listaProdutos: Produto[]
   produto: Produto = new Produto()
+  idProduto: number
 
   constructor(
     private router: Router,
     private authService: AuthService,
-    private produtoService: ProdutoService
+    private produtoService: ProdutoService,
+    private carrinhoService: CarrinhoService
   ) { }
 
   ngOnInit() {
@@ -31,6 +34,18 @@ export class ProdutoComponent implements OnInit {
     this.produtoService.getAllProduto().subscribe((resp: Produto[]) => {
       this.listaProdutos = resp
     })
+  }
+
+  getByIdProduto(id:number){
+    this.produtoService.getByIdProduto(id).subscribe((resp: Produto)=> {
+      this.produto = resp
+      this.adicionarProduto()
+    })
+  }
+
+  adicionarProduto(){
+    this.carrinhoService.adicionar(this.produto)
+    console.log(this.carrinhoService.produto)
   }
 
   cadastrarProduto() {

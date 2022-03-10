@@ -181,7 +181,7 @@ li {
 }
 
 .gradiente{
-    background-image: linear-gradient(to right, #FCA311, #FFC300 , #E5E5E5);
+    background-image: linear-gradient(to bottom, #FCA311, #ffb134, #ffbe56,  #ffca74, #ffffff);
 }
 
 .marg-t{

@@ -23,7 +23,7 @@ export class ProdutoDeleteComponent implements OnInit {
   ngOnInit() {
     if(environment.token == ''){
       this.router.navigate(['/entrar'])
-    }
+  }
 
     this.idProduto = this.route.snapshot.params['id']
     this.findByIdProduto(this.idProduto)

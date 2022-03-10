@@ -1,0 +1,47 @@
+<div class="container-fluid my-4">
+    <div class="container">
+        <div class="row">
+            <h3 class="cor-texto">Minhas compras</h3>
+        </div>
+        <div class="row d-flex align-items-center justify-content-between">
+            <div class="col-7">
+                <div class="row border rounded border-dark p-0 mb-3" *ngFor="let produto of listaCompras">
+                    <div class="col-2 p-0 m-0">
+                        <img src="{{produto.foto}}" alt="" class="image-fluid rounded" height="100px" />
+                    </div>
+                    <div class="col-7">
+                        <div class="row d-flex flex-column">
+                            <h5 class="my-3">{{produto.nome }}</h5>
+                            <p>Categoria: {{ produto.categoria }}</p>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="row d-flex justify-content-center align-items-center h-100">
+                            <h5 class="text-center">{{ produto.preco | currency: "BRL" }}</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="row d-flex justify-content-center align-items-center">
+                            <h5 class="text-center">
+                                Total: {{ total() | currency: "BRL" }}
+                            </h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="row">
+                            <button class="btn cinza btn-block mt-3" routerLink="/produto">Continuar comprando</button>
+                            <button class="btn btn-success btn-block" (click)="finalizarCompra()">Finalizar
+                                compra</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -22,6 +22,7 @@ import { CategoriaDeleteComponent } from './delete/categoria-delete/categoria-de
 import { ProdutoEditComponent } from './edit/produto-edit/produto-edit.component';
 import { CategoriaEditComponent } from './edit/categoria-edit/categoria-edit.component';
 import { EquipeComponent } from './equipe/equipe.component';
+import { CarrinhoComponent } from './carrinho/carrinho.component';
 
 
 
@@ -42,7 +43,8 @@ import { EquipeComponent } from './equipe/equipe.component';
     CategoriaDeleteComponent,
     ProdutoEditComponent,
     CategoriaEditComponent,
-    EquipeComponent
+    EquipeComponent,
+    CarrinhoComponent
   ],
   imports: [
     BrowserModule,
