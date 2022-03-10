@@ -11,8 +11,9 @@ import { AuthService } from '../service/auth.service';
 })
 export class CadastrarComponent implements OnInit {
 
-	usuario: Usuario = new Usuario;
-	confirmarSenha: string;
+	usuario: Usuario = new Usuario
+	confirmarSenha: string
+	tipoUsuario: string
 
 
   constructor(
@@ -28,7 +29,13 @@ export class CadastrarComponent implements OnInit {
 	  this.confirmarSenha = event.target.value
   }
 
+  tipoUser(event: any){
+	  this.tipoUsuario = event.target.value
+  }
+
   cadastrar(){
+	  this.usuario.tipo = this.tipoUsuario
+
 	  if (this.usuario.senha != this.confirmarSenha){
 	  console.log(this.usuario.senha)
 	  console.log(this.confirmarSenha)
