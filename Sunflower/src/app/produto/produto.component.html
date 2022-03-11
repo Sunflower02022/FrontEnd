@@ -7,14 +7,14 @@
                         <h3 class="fc-yellow">45% OFF</h3>
                         <a>
                             <img class="card-img-top"
-                                src="https://images.pexels.com/photos/2078268/pexels-photo-2078268.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
-                                alt="">
+                                src="https://i.imgur.com/PV4JDqE.jpeg"
+                                alt="Fonte de Água com Placa Solar">
                         </a>
                         <a class="text-reset">
-                            <h3 class="card-title display-4 fs-24">x</h3>
+                            <h3 class="card-title display-4 fs-24 mt-3">Teclado Sem Fio com Placa Solar</h3>
                         </a>
-                        <h6 class="fs-18">R$ 199.99 <del class="text-muted ml-2 fs-18">R$ 399.99</del></h6>
-                        <button class="btn fc-bg-blue my-2 fc-bg-yellow"><b>Comprar</b></button>
+                        <h6 class="fs-18">R$402.75<del class="text-muted ml-2 fs-18">R$895.00</del></h6>
+                        <!-- <button class="btn fc-bg-blue my-2 fc-bg-yellow"><b>Comprar</b></button> -->
                     </div>
                 </div>
             </div>
@@ -24,14 +24,14 @@
                         <h3 class="fc-yellow">50% OFF</h3>
                         <a>
                             <img class="card-img-top"
-                                src="https://images.pexels.com/photos/1374128/pexels-photo-1374128.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
-                                alt="">
+                                src="https://i.imgur.com/cRrzifh.jpeg"
+                                alt="Câmera de Segurança com Painel Solar">
                         </a>
                         <a class="text-reset">
-                            <h3 class="card-title display-4 fs-24">y</h3>
+                            <h3 class="card-title display-4 fs-24 mt-3">Câmera de Segurança com Placa Solar</h3>
                         </a>
-                        <h6 class="fs-18">R$ 199.99 <del class="text-muted ml-2 fs-18">R$ 399.99</del></h6>
-                        <button class="btn fc-bg-blue my-2 fc-bg-yellow"><b>Comprar</b></button>
+                        <h6 class="fs-18">R$1619.94<del class="text-muted ml-2 fs-18">R$3239.88</del></h6>
+                        <!-- <button class="btn fc-bg-blue my-2 fc-bg-yellow"><b>Comprar</b></button> -->
                     </div>
                 </div>
             </div>
@@ -41,14 +41,14 @@
                         <h3 class="fc-yellow">60% OFF</h3>
                         <a>
                             <img class="card-img-top"
-                                src="https://images.pexels.com/photos/2783873/pexels-photo-2783873.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+                                src="https://i.imgur.com/tBpzpZy.jpeg"
                                 alt="">
                         </a>
                         <a class="text-reset">
-                            <h3 class="card-title display-4 fs-24">z</h3>
+                            <h3 class="card-title display-4 fs-24 mt-3">Mochila de Camping com Placa Solar</h3>
                         </a>
-                        <h6 class="fs-18">R$ 199.99 <del class="text-muted ml-2 fs-18">R$ 399.99</del></h6>
-                        <button class="btn fc-bg-blue my-2 fc-bg-yellow"><b>Comprar</b></button>
+                        <h6 class="fs-18">R$293.40<del class="text-muted ml-2 fs-18">R$489.99</del></h6>
+                        <!-- <button class="btn fc-bg-blue my-2 fc-bg-yellow"><b>Comprar</b></button> -->
                     </div>
                 </div>
             </div>
@@ -81,10 +81,10 @@
                             <div class="card-body">
                                 <h5 class="card-text fs-24">{{item.nome}}</h5>
                                 <p class="card-text">{{item.descricao}}</p>
-                                <p class="fs-18"><b>R$ {{item.preco}}</b></p>
+                                <p class="fs-18"><b>{{item.preco  | currency: "BRL"}}</b></p>
                                 <div class="text-center">
                                     <a class="btn fc-blue fc-bg-yellow" routerLink="/carrinho"
-                                        (click)="getByIdProduto(produto.id)"><b>Comprar</b></a>
+                                    [routerLink]="['/carrinho', item.id]"><b>Comprar</b></a>
                                 </div>
                             </div>
                         </div>
@@ -106,7 +106,7 @@
                                 <div class="card-body">
                                   <h5 class="card-text fs-24">{{item.nome}}</h5>
                                   <p class="card-text">{{item.descricao}}</p>
-                                  <p class="fs-18"><b>R$ {{item.preco}}</b></p>
+                                  <p class="fs-18"><b>{{item.preco | currency: "BRL"}}</b></p>
                                   <div class="text-center">
                                     <a href="#" class="btn fc-blue fc-bg-yellow"><b>Comprar</b></a>
                                   </div>

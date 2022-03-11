@@ -15,7 +15,12 @@ body {
 }
 
 .fc-yellow{
-    color:#ffd60a;
+    color:#ffd500;
+    font-weight: bold;
+}
+
+.fc-blue{
+    color:#001d3d;
 }
 
 .fc-bg-blue{

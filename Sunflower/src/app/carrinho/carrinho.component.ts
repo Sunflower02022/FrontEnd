@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
+import { environment } from 'src/environments/environment.prod';
+import { Categoria } from '../model/Categoria';
 import { Produto } from '../model/Produto';
 import { AuthService } from '../service/auth.service';
 import { CarrinhoService } from '../service/carrinho.service';
@@ -15,22 +17,33 @@ import { ProdutoService } from '../service/produto.service';
 export class CarrinhoComponent implements OnInit {
 
   produto: Produto = new Produto()
+  categoria: Categoria = new Categoria()
   listaCompras = this.carrinho.listar();
   comprados = this.carrinho.listar();
   idProduto: number
+  idCategoria: number
 
   constructor(
     private carrinho: CarrinhoService,
     private produtoService: ProdutoService,
-    private categoria: CategoriaService,
+    private categoriaService: CategoriaService,
     private auth: AuthService,
     private router: Router,
     private route: ActivatedRoute
   ) { }
 
   ngOnInit(){
+
+    if(environment.token == ''){
+      this.router.navigate(['/entrar'])
+    }
+
     this.idProduto = this.route.snapshot.params['id']
     this.findByIdProduto(this.idProduto)
+
+    let id = this.route.snapshot.params['id']
+    this.findByIdProduto(id)
+    // this.exibirProduto()
   }
 
   findByIdProduto(id:number){
@@ -47,6 +60,17 @@ export class CarrinhoComponent implements OnInit {
     
     this.router.navigate(["/inicio"])
     alert("Sua compra foi finalizada com sucesso. Volte sempre!")
+  }
+
+  exibirProduto(){
+    this.categoria.id =  this.idCategoria
+
+    this.produtoService.getByIdProduto(this.idProduto).subscribe((resp: Produto)=>{
+      this.produto = resp
+      console.log(this.produto)
+    })
+
+
   }
 
 }
