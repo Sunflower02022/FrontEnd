@@ -33,6 +33,7 @@ export class ProdutoComponent implements OnInit {
     })
   }
 
+
   cadastrarProduto() {
     this.produtoService.postProduto(this.produto).subscribe((resp: Produto) => {
       this.produto = resp
