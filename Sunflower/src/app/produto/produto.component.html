@@ -6,8 +6,7 @@
                     <div class="card-body text-center">
                         <h3 class="fc-yellow">45% OFF</h3>
                         <a>
-                            <img class="card-img-top"
-                                src="https://i.imgur.com/PV4JDqE.jpeg"
+                            <img class="card-img-top" src="https://i.imgur.com/PV4JDqE.jpeg"
                                 alt="Fonte de Água com Placa Solar">
                         </a>
                         <a class="text-reset">
@@ -23,8 +22,7 @@
                     <div class="card-body text-center">
                         <h3 class="fc-yellow">50% OFF</h3>
                         <a>
-                            <img class="card-img-top"
-                                src="https://i.imgur.com/cRrzifh.jpeg"
+                            <img class="card-img-top" src="https://i.imgur.com/cRrzifh.jpeg"
                                 alt="Câmera de Segurança com Painel Solar">
                         </a>
                         <a class="text-reset">
@@ -40,9 +38,7 @@
                     <div class="card-body text-center">
                         <h3 class="fc-yellow">60% OFF</h3>
                         <a>
-                            <img class="card-img-top"
-                                src="https://i.imgur.com/tBpzpZy.jpeg"
-                                alt="">
+                            <img class="card-img-top" src="https://i.imgur.com/tBpzpZy.jpeg" alt="">
                         </a>
                         <a class="text-reset">
                             <h3 class="card-title display-4 fs-24 mt-3">Mochila de Camping com Placa Solar</h3>
@@ -63,10 +59,10 @@
             <a class="nav-item nav-link active text-secondary" id="nav-todosProdutos" data-toggle="tab"
                 href="#todosProdutos" role="tab" aria-controls="nav-todosProdutos" aria-selected="true">Todos os
                 produtos</a>
-            <a class="nav-item nav-link text-secondary" id="nav-residencial" data-toggle="tab" href="#residencial"
+            <!-- <a class="nav-item nav-link text-secondary" id="nav-residencial" data-toggle="tab" href="#residencial"
                 role="tab" aria-controls="nav-residencial" aria-selected="false">Residencial</a>
             <a class="nav-item nav-link text-secondary" id="nav-industrial" data-toggle="tab" href="#industrial"
-                role="tab" aria-controls="nav-industrial" aria-selected="false">Industrial</a>
+                role="tab" aria-controls="nav-industrial" aria-selected="false">Industrial</a> -->
         </div>
     </nav>
 
@@ -81,10 +77,10 @@
                             <div class="card-body">
                                 <h5 class="card-text fs-24">{{item.nome}}</h5>
                                 <p class="card-text">{{item.descricao}}</p>
-                                <p class="fs-18"><b>{{item.preco  | currency: "BRL"}}</b></p>
+                                <p class="fs-18"><b>{{item.preco | currency: "BRL"}}</b></p>
                                 <div class="text-center">
                                     <a class="btn fc-blue fc-bg-yellow" routerLink="/carrinho"
-                                    [routerLink]="['/carrinho', item.id]"><b>Comprar</b></a>
+                                        [routerLink]="['/carrinho', item.id]"><b>Comprar</b></a>
                                 </div>
                             </div>
                         </div>
@@ -94,7 +90,7 @@
         </div>
 
 
-        <div class="tab-pane fade" id="residencial" role="tabpanel" aria-labelledby="nav-residencial-tab">
+        <!-- <div class="tab-pane fade" id="residencial" role="tabpanel" aria-labelledby="nav-residencial-tab">
             <div class="tab-pane fade show active" id="todosProdutos" role="tabpanel"
                 aria-labelledby="nav-todosProdutos-tab">
 
@@ -121,6 +117,6 @@
 
         <div class="tab-pane fade" id="industrial" role="tabpanel" aria-labelledby="nav-industrial-tab">
 
-        </div>
+        </div> -->
     </div>
 </div>
