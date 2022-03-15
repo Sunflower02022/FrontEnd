@@ -57,7 +57,7 @@ O Front-End foi construído com as tecnologias:
 <p align="center">
   <img src="https://user-images.githubusercontent.com/97894147/158459183-158e1272-b061-4c64-8c45-de72bcdbe9a4.png" height="500" width="500">
   <img src="https://user-images.githubusercontent.com/97894147/158459404-c4e77674-98b4-4f66-9d04-0bcc8133a6ef.png" height="500" width="500">
-  <img src="https://user-images.githubusercontent.com/97894147/158461449-bb1c7b0a-6e1e-4004-9e2e-ab24d2f7c62a.png" width="1000">
+  <img src="https://user-images.githubusercontent.com/97894147/158461449-bb1c7b0a-6e1e-4004-9e2e-ab24d2f7c62a.png" width="500">
 </p>
 
 ### Sobre nós / Equipe
