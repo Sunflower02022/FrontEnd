@@ -18,11 +18,11 @@ export class AuthService {
   ) { }
 
   entrar(usuarioLogin: UsuarioLogin): Observable<UsuarioLogin>{
-	  return this.http.post<UsuarioLogin>("https://sunflowerpi.herokuapp.com/usuario/logar", usuarioLogin);
+	  return this.http.post<UsuarioLogin>("https://ecommercesunflower.herokuapp.com/usuario/logar", usuarioLogin);
   }
 
    cadastrar(usuario: Usuario): Observable<Usuario>{
-	  return this.http.post<Usuario>("https://sunflowerpi.herokuapp.com/usuario/cadastrar", usuario);
+	  return this.http.post<Usuario>("https://ecommercesunflower.herokuapp.com/usuario/cadastrar", usuario);
   }
 
   logado(){

@@ -18,23 +18,23 @@ export class CategoriaService {
   }
 
   getAllCategoria(): Observable<Categoria[]> {
-    return this.http.get<Categoria[]>('https://sunflowerpi.herokuapp.com/categoria', this.token)
+    return this.http.get<Categoria[]>('https://ecommercesunflower.herokuapp.com/categoria', this.token)
   }
 
   getByIdCategoria(id: number): Observable<Categoria>{
-    return this.http.get<Categoria>(`https://sunflowerpi.herokuapp.com/categoria/${id}`,this.token)
+    return this.http.get<Categoria>(`https://ecommercesunflower.herokuapp.com/categoria/${id}`,this.token)
   }
 
   postCategoria(categoria: Categoria): Observable<Categoria> {
-    return this.http.post<Categoria>('https://sunflowerpi.herokuapp.com/categoria', categoria, this.token)
+    return this.http.post<Categoria>('https://ecommercesunflower.herokuapp.com/categoria', categoria, this.token)
   }
 
   putCategoria(categoria: Categoria): Observable<Categoria> {
-    return this.http.put<Categoria>('https://sunflowerpi.herokuapp.com/categoria', categoria, this.token)
+    return this.http.put<Categoria>('https://ecommercesunflower.herokuapp.com/categoria', categoria, this.token)
   }
 
   deleteCategoria(id: number){
-    return this.http.delete(`https://sunflowerpi.herokuapp.com/categoria/${id}`,this.token)
+    return this.http.delete(`https://ecommercesunflower.herokuapp.com/categoria/${id}`,this.token)
   }
 
 }
