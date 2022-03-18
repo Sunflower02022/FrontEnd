@@ -52,6 +52,19 @@
     background-color: #001D3D;
 }
 
+.pesquisar{
+    background-color: #feffdc;
+    border-style: none;
+}
+
+.pesquisar:hover{
+    transform: scale(1.2)
+}
+
+.zoom:hover{
+    transform: scale(1.2);
+}
+
 #home{
     color: #001D3D;
 }

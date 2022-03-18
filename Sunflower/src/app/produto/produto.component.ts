@@ -16,12 +16,16 @@ export class ProdutoComponent implements OnInit {
 
   listaResidencial: Produto[]
   listaIndustrial: Produto[]
-  
+
   categoria = new Categoria()
 
   listaProdutos: Produto[]
   produto: Produto = new Produto()
   idProduto: number
+  // nomeProdutos: string
+  key = 'data'
+  reverse = true
+
 
   constructor(
     private router: Router,
@@ -32,16 +36,16 @@ export class ProdutoComponent implements OnInit {
 
   ngOnInit() {
 
-    
+
     this.getAllProdutos()
 
     this.separarProdutoIndustrial()
 
   }
 
-  separarProdutoIndustrial(){
-    for (let i = 1 ;i < this.listaProdutos.length; i ++){
-      if(this.listaProdutos[i].categoria.setor == "INDUSTRIAL"){
+  separarProdutoIndustrial() {
+    for (let i = 1; i < this.listaProdutos.length; i++) {
+      if (this.listaProdutos[i].categoria.setor == "INDUSTRIAL") {
         this.listaIndustrial.push(this.listaProdutos[i])
         console.log(this.listaProdutos[i])
       }
@@ -49,10 +53,8 @@ export class ProdutoComponent implements OnInit {
     }
     console.log("ok")
     console.log(this.listaIndustrial)
+    // console.log(this.nomeProdutos)
   }
-
-
-  
 
   getAllProdutos() {
     this.produtoService.getAllProduto().subscribe((resp: Produto[]) => {
@@ -62,14 +64,14 @@ export class ProdutoComponent implements OnInit {
     })
   }
 
-  getByIdProduto(id:number){
-    this.produtoService.getByIdProduto(id).subscribe((resp: Produto)=> {
+  getByIdProduto(id: number) {
+    this.produtoService.getByIdProduto(id).subscribe((resp: Produto) => {
       this.produto = resp
       this.adicionarProduto()
     })
   }
 
-  adicionarProduto(){
+  adicionarProduto() {
     this.carrinhoService.adicionar(this.produto)
     console.log(this.carrinhoService.produto)
   }
@@ -81,7 +83,18 @@ export class ProdutoComponent implements OnInit {
       this.getAllProdutos()
       this.produto = new Produto()
     })
-
   }
+
+  // findByNomeProdutos() {
+
+  //   if (this.nomeProdutos == "") {
+  //     this.getAllProdutos()
+  //   } else {
+  //     this.produtoService.getByNomeProdutos(this.nomeProdutos).subscribe((resp: Produto[]) => {
+  //       this.listaProdutos = resp
+  //     })
+  //   }
+  // }
+
 
 }

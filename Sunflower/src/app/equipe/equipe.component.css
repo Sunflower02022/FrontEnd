@@ -149,6 +149,17 @@ li {
     color: #000000;
 }
 
+.black:hover {
+    color: #08249c;
+}
+
+.white{
+    color: #ffffff;
+}
+
+.white:hover {
+    color: #ffd60a;
+}
 
 .fc-bg {
     background-color: #001d3def;
@@ -190,4 +201,8 @@ margin-top: 100px;
 
 .p-120{
     padding: 120px;
+}
+
+.zoom:hover{
+    transform: scale(1.05);
 }

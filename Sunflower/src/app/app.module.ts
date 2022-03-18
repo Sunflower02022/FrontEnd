@@ -23,6 +23,7 @@ import { ProdutoEditComponent } from './edit/produto-edit/produto-edit.component
 import { CategoriaEditComponent } from './edit/categoria-edit/categoria-edit.component';
 import { EquipeComponent } from './equipe/equipe.component';
 import { CarrinhoComponent } from './carrinho/carrinho.component';
+import { OrderModule } from 'ngx-order-pipe';
 
 
 
@@ -49,8 +50,9 @@ import { CarrinhoComponent } from './carrinho/carrinho.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-	HttpClientModule,
-	FormsModule
+	  HttpClientModule,
+	  FormsModule,
+    OrderModule
   ],
   providers: [{
 	  provide:LocationStrategy,

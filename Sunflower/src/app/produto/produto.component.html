@@ -69,9 +69,19 @@
     <div class="tab-content" id="nav-tabContent">
         <div class="tab-pane fade show active" id="todosProdutos" role="tabpanel"
             aria-labelledby="nav-todosProdutos-tab">
+            <!-- <div class="row d-flex justify-content-center mt-4 mb-5">
+                <div class="col-md-4">
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="titulo"
+                            placeholder="Digite o nome do produto para pesquisar" [(ngModel)]='nomeProdutos'
+                            (keyup)="findByNomeProdutos()">
+                    </div>
+                </div>
+            </div> -->
+
             <div class="container mt-5">
                 <div class="row alinhamento">
-                    <div class="" *ngFor='let item of listaProdutos'>
+                    <div class="" *ngFor='let item of listaProdutos | orderBy: key : reverse'>
                         <div class="card mt-4 card shadow pl-3 pr-3 pt-4" style="width: 18rem;">
                             <img src="{{item.foto}}" class="card-img-top" alt="...">
                             <div class="card-body">
