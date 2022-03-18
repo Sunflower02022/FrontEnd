@@ -3,6 +3,8 @@ import { Router } from '@angular/router';
 import { environment } from 'src/environments/environment.prod';
 import { Categoria } from '../model/Categoria';
 import { Produto } from '../model/Produto';
+import { Usuario } from '../model/Usuario';
+import { AuthService } from '../service/auth.service';
 import { CategoriaService } from '../service/categoria.service';
 import { ProdutoService } from '../service/produto.service';
 
@@ -17,13 +19,16 @@ export class PainelComponent implements OnInit {
   produto: Produto = new Produto()
 
   categoria: Categoria = new Categoria()
+  usuario: Usuario
   listaCategorias: Categoria[]
   idCategoria: number
+  // usuario: Usuario = new Usuario()
 
   constructor(
 	private router: Router,
     private cadastroProdutoService: ProdutoService,
-    private categoriaService: CategoriaService
+    private categoriaService: CategoriaService,
+    // private authService: AuthService
   ) { }
 
   ngOnInit(): void {
@@ -31,6 +36,14 @@ export class PainelComponent implements OnInit {
     if (environment.token == '') {
 		this.router.navigate(['/entrar'])
 	  }
+
+    // this.findByTipoUsuario()
+
+    // if(environment.tipo != 'adm'){
+    //   alert('Você precisa ser administrador para acessar o painel de controle!')
+    //   this.router.navigate(['/inicio'])
+    //   console.log(environment.tipo)
+    // }
 
     this.findAllProduto()
     this.findAllCategoria()
@@ -53,5 +66,11 @@ export class PainelComponent implements OnInit {
       this.listaProduto = resp
     })
   }
+
+  // findByTipoUsuario(){
+  //   this.authService.getByTipoUsuario(this.usuario.tipo).subscribe((resp: Usuario)=> {
+  //     this.usuario = resp
+  //   })
+  // }
 
 }
